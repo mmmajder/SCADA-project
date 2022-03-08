@@ -1,0 +1,7 @@
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\ReportManager\bin\Debug\ReportManager.exe.config
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\ReportManager\bin\Debug\ReportManager.exe
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\ReportManager\bin\Debug\ReportManager.pdb
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\ReportManager\obj\Debug\ReportManager.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\ReportManager\obj\Debug\ReportManager.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\ReportManager\obj\Debug\ReportManager.exe
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\ReportManager\obj\Debug\ReportManager.pdb

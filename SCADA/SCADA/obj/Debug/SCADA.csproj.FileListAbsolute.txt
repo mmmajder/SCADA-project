@@ -1,0 +1,12 @@
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\SCADA\obj\Debug\SCADA.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\SCADA\obj\Debug\SCADA.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\SCADA\bin\SCADA.dll.config
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\SCADA\bin\SCADA.dll
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\SCADA\bin\SCADA.pdb
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\SCADA\bin\EntityFramework.dll
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\SCADA\bin\EntityFramework.SqlServer.dll
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\SCADA\bin\EntityFramework.xml
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\SCADA\bin\EntityFramework.SqlServer.xml
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\SCADA\obj\Debug\SCADA.csproj.CopyComplete
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\SCADA\obj\Debug\SCADA.dll
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\SCADA\obj\Debug\SCADA.pdb

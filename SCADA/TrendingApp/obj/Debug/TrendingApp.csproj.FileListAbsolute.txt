@@ -1,0 +1,7 @@
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\TrendingApp\bin\Debug\TrendingApp.exe.config
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\TrendingApp\bin\Debug\TrendingApp.exe
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\TrendingApp\bin\Debug\TrendingApp.pdb
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\TrendingApp\obj\Debug\TrendingApp.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\TrendingApp\obj\Debug\TrendingApp.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\TrendingApp\obj\Debug\TrendingApp.exe
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\TrendingApp\obj\Debug\TrendingApp.pdb

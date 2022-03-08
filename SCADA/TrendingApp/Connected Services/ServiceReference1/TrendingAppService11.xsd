@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SCADA.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SCADA.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:49402/TrendingAppService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SCADA.Model.Tags" />
+  <xs:complexType name="ArrayOfTagInvoked">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TagInvoked" nillable="true" type="tns:TagInvoked" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTagInvoked" nillable="true" type="tns:ArrayOfTagInvoked" />
+  <xs:complexType name="TagInvoked">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="TagName" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SCADA.Model.Tags" minOccurs="0" name="TagType" type="q1:TagType" />
+      <xs:element minOccurs="0" name="TimeStamp" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Value" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TagInvoked" nillable="true" type="tns:TagInvoked" />
+</xs:schema>

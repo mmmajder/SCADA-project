@@ -1,0 +1,7 @@
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\DatabaseManager\bin\Debug\DatabaseManager.exe.config
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\DatabaseManager\bin\Debug\DatabaseManager.exe
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\DatabaseManager\bin\Debug\DatabaseManager.pdb
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\DatabaseManager\obj\Debug\DatabaseManager.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\DatabaseManager\obj\Debug\DatabaseManager.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\DatabaseManager\obj\Debug\DatabaseManager.exe
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\DatabaseManager\obj\Debug\DatabaseManager.pdb

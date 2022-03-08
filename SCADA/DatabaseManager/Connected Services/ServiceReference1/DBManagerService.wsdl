@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DBManagerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49402/DBManagerService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49402/DBManagerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49402/DBManagerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SCADA.Model.Tags" />
+      <xsd:import schemaLocation="http://localhost:49402/DBManagerService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SCADA.Model.Alarms" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAuthentication_Registration_InputMessage">
+    <wsdl:part name="parameters" element="tns:Registration" />
+  </wsdl:message>
+  <wsdl:message name="IAuthentication_Registration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuthentication_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IAuthentication_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuthentication_Logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="IAuthentication_Logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_ChangeOutputValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeOutputValue" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_ChangeOutputValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeOutputValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_ChangeScanStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeScanStatus" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_ChangeScanStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeScanStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_GetInputTags_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInputTags" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_GetInputTags_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInputTagsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_AddAITag_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAITag" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_AddAITag_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAITagResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_AddAOTag_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAOTag" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_AddAOTag_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAOTagResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_AddDITag_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDITag" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_AddDITag_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDITagResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_AddDOTag_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDOTag" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_AddDOTag_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDOTagResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_GetOutputValues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutputValues" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_GetOutputValues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutputValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_GetAllTags_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTags" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_GetAllTags_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTagsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_RemoveTag_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTag" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_RemoveTag_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTagResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_GetAITags_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAITags" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_GetAITags_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAITagsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_GetAIById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAIById" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_GetAIById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAIByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_AddAlarm_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAlarm" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_AddAlarm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAlarmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_RemoveAlarm_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveAlarm" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_RemoveAlarm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveAlarmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_GetAlarms_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlarms" />
+  </wsdl:message>
+  <wsdl:message name="IDBManagerService_GetAlarms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlarmsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAuthentication">
+    <wsdl:operation name="Registration">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuthentication/Registration" message="tns:IAuthentication_Registration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuthentication/RegistrationResponse" message="tns:IAuthentication_Registration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuthentication/Login" message="tns:IAuthentication_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuthentication/LoginResponse" message="tns:IAuthentication_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuthentication/Logout" message="tns:IAuthentication_Logout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuthentication/LogoutResponse" message="tns:IAuthentication_Logout_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IDBManagerService">
+    <wsdl:operation name="ChangeOutputValue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/ChangeOutputValue" message="tns:IDBManagerService_ChangeOutputValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/ChangeOutputValueResponse" message="tns:IDBManagerService_ChangeOutputValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeScanStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/ChangeScanStatus" message="tns:IDBManagerService_ChangeScanStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/ChangeScanStatusResponse" message="tns:IDBManagerService_ChangeScanStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInputTags">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/GetInputTags" message="tns:IDBManagerService_GetInputTags_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/GetInputTagsResponse" message="tns:IDBManagerService_GetInputTags_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAITag">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/AddAITag" message="tns:IDBManagerService_AddAITag_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/AddAITagResponse" message="tns:IDBManagerService_AddAITag_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAOTag">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/AddAOTag" message="tns:IDBManagerService_AddAOTag_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/AddAOTagResponse" message="tns:IDBManagerService_AddAOTag_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDITag">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/AddDITag" message="tns:IDBManagerService_AddDITag_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/AddDITagResponse" message="tns:IDBManagerService_AddDITag_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDOTag">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/AddDOTag" message="tns:IDBManagerService_AddDOTag_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/AddDOTagResponse" message="tns:IDBManagerService_AddDOTag_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutputValues">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/GetOutputValues" message="tns:IDBManagerService_GetOutputValues_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/GetOutputValuesResponse" message="tns:IDBManagerService_GetOutputValues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTags">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/GetAllTags" message="tns:IDBManagerService_GetAllTags_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/GetAllTagsResponse" message="tns:IDBManagerService_GetAllTags_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTag">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/RemoveTag" message="tns:IDBManagerService_RemoveTag_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/RemoveTagResponse" message="tns:IDBManagerService_RemoveTag_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAITags">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/GetAITags" message="tns:IDBManagerService_GetAITags_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/GetAITagsResponse" message="tns:IDBManagerService_GetAITags_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAIById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/GetAIById" message="tns:IDBManagerService_GetAIById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/GetAIByIdResponse" message="tns:IDBManagerService_GetAIById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAlarm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/AddAlarm" message="tns:IDBManagerService_AddAlarm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/AddAlarmResponse" message="tns:IDBManagerService_AddAlarm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAlarm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/RemoveAlarm" message="tns:IDBManagerService_RemoveAlarm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/RemoveAlarmResponse" message="tns:IDBManagerService_RemoveAlarm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlarms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBManagerService/GetAlarms" message="tns:IDBManagerService_GetAlarms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBManagerService/GetAlarmsResponse" message="tns:IDBManagerService_GetAlarms_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAuthentication" type="tns:IAuthentication">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Registration">
+      <soap:operation soapAction="http://tempuri.org/IAuthentication/Registration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IAuthentication/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://tempuri.org/IAuthentication/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IDBManagerService" type="tns:IDBManagerService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ChangeOutputValue">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/ChangeOutputValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeScanStatus">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/ChangeScanStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInputTags">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/GetInputTags" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAITag">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/AddAITag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAOTag">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/AddAOTag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDITag">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/AddDITag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDOTag">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/AddDOTag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutputValues">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/GetOutputValues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTags">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/GetAllTags" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTag">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/RemoveTag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAITags">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/GetAITags" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAIById">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/GetAIById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAlarm">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/AddAlarm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAlarm">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/RemoveAlarm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlarms">
+      <soap:operation soapAction="http://tempuri.org/IDBManagerService/GetAlarms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DBManagerService">
+    <wsdl:port name="BasicHttpBinding_IAuthentication" binding="tns:BasicHttpBinding_IAuthentication">
+      <soap:address location="http://localhost:49402/DBManagerService.svc/DBManagerServiceAuth" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IDBManagerService" binding="tns:BasicHttpBinding_IDBManagerService">
+      <soap:address location="http://localhost:49402/DBManagerService.svc/DBManagerService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

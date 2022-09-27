@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c39667a4-94a2-4cf2-bf1b-22057b76b326" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49402/TrendingAppService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TrendingAppService.xsd" MetadataType="Schema" ID="03d71298-6bf9-4666-b89c-89d565a35b5f" SourceId="1" SourceUrl="http://localhost:49402/TrendingAppService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TrendingAppService1.xsd" MetadataType="Schema" ID="3fb2727d-521a-4b43-a40c-fa7658f434f4" SourceId="1" SourceUrl="http://localhost:49402/TrendingAppService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TrendingAppService11.xsd" MetadataType="Schema" ID="fb8c2be7-35a8-47bb-a401-d6a08450a3f7" SourceId="1" SourceUrl="http://localhost:49402/TrendingAppService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TrendingAppService2.xsd" MetadataType="Schema" ID="c88a1943-06b5-4d3d-bd71-eadf39b4466d" SourceId="1" SourceUrl="http://localhost:49402/TrendingAppService.svc?xsd=xsd3" />
+    <MetadataFile FileName="TrendingAppService.disco" MetadataType="Disco" ID="7188deab-079a-4572-9030-54ba0b176c96" SourceId="1" SourceUrl="http://localhost:49402/TrendingAppService.svc?disco" />
+    <MetadataFile FileName="TrendingAppService.wsdl" MetadataType="Wsdl" ID="dd9983b3-c22c-490a-bd2b-ce5ccd5bd141" SourceId="1" SourceUrl="http://localhost:49402/TrendingAppService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

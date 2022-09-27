@@ -1,0 +1,7 @@
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\RTU\bin\Debug\RTU.exe.config
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\RTU\bin\Debug\RTU.exe
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\RTU\bin\Debug\RTU.pdb
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\RTU\obj\Debug\RTU.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\RTU\obj\Debug\RTU.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\RTU\obj\Debug\RTU.exe
+C:\Users\Korisnik\Desktop\SNUSProjekat\SCADA\RTU\obj\Debug\RTU.pdb

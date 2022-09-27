@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tags>
+  <Tag TagName="AI1" Description="Desc" IOAddress="S" Type="AI" IsDeleted="false" ScanTime="1" IsActiveScan="on" Driver="Simulation" LowLimit="0" HighLimit="100" Units="liters" />
+  <Tag TagName="aaa" Description="Desc" IOAddress="rtu1" Type="AI" IsDeleted="false" ScanTime="2" IsActiveScan="on" Driver="RealTime" LowLimit="0" HighLimit="100" Units="liters" />
+  <Tag TagName="AI3" Description="Desc" IOAddress="C" Type="AI" IsDeleted="true" ScanTime="3" IsActiveScan="on" Driver="Simulation" LowLimit="100" HighLimit="200" Units="liters" />
+  <Tag TagName="AO" Description="Desc2" IOAddress="C" Type="AO" IsDeleted="false" InitialValue="15" LowLimit="0" HighLimit="50" Units="lit" />
+  <Tag TagName="AO2" Description="Desc" IOAddress="C" Type="AO" IsDeleted="true" InitialValue="30" LowLimit="20" HighLimit="40" Units="liters" />
+  <Tag TagName="DI" Description="Desc3" IOAddress="R" Type="DI" IsDeleted="false" ScanTime="5" IsActiveScan="on" Driver="Simulation" />
+  <Tag TagName="DO" Description="Desc4" IOAddress="S" Type="DO" IsDeleted="false" InitialValue="10" />
+</Tags>

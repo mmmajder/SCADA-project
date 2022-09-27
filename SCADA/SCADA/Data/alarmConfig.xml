@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Alarms>
+  <Alarm Id="24" TagName="AI1" AlarmType="low" Priority="1" Limit="10" />
+  <Alarm Id="0" TagName="AI1" AlarmType="high" Priority="1" Limit="80" />
+  <Alarm Id="3" TagName="aaa" AlarmType="high" Priority="3" Limit="90" />
+</Alarms>

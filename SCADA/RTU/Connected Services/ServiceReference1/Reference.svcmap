@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5e21b891-e0d8-4399-b971-c86329e44654" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49402/RTUService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RTUService.wsdl" MetadataType="Wsdl" ID="423eca81-4d31-47b1-871f-6231aabbb303" SourceId="1" SourceUrl="http://localhost:49402/RTUService.svc?wsdl" />
+    <MetadataFile FileName="RTUService.disco" MetadataType="Disco" ID="7cc9bbcb-612e-4b46-a793-a19541e204e6" SourceId="1" SourceUrl="http://localhost:49402/RTUService.svc?disco" />
+    <MetadataFile FileName="RTUService.xsd" MetadataType="Schema" ID="aabf8fc3-ff2e-4814-adf0-e1478a58b216" SourceId="1" SourceUrl="http://localhost:49402/RTUService.svc?xsd=xsd0" />
+    <MetadataFile FileName="RTUService1.xsd" MetadataType="Schema" ID="9d0a23ac-e250-4199-934b-580ce76c40c3" SourceId="1" SourceUrl="http://localhost:49402/RTUService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
